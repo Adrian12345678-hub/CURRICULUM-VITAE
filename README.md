@@ -2,7 +2,7 @@
 
 ¡Hola! Es un placer que estés visitando mi proyecto.
 
-Este espacio ha sido creado con mucho esfuerzo y dedicación para mostrar quien soy, formación, experiencia y habilidades de una forma clara, moderna y accesible. Notad que tambien hay un espacio para que podamos contactar. _¡No dudeis en utilizarlo!_
+Este espacio ha sido creado con mucho esfuerzo y dedicación para mostrar quien soy, formación, experiencia y habilidades de una forma clara, moderna y accesible. Notad que tambien hay un espacio para que podamos contactar. 
 
 💡 Aquí podrás encontrar información sobre:
 - Mi perfil profesional
@@ -28,4 +28,4 @@ Su objetivo es ofrecer una experiencia visual agradable y profesional.
 
 ---
 
-📬 **No dudes en contactarme si quieres saber más sobre mí o colaborar en algún proyecto.**
+📬 **_No dudes en contactarme si quieres saber más sobre mí o colaborar en algún proyecto._**
