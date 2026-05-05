@@ -1,0 +1,142 @@
+<!--VOY A COMENTAR SOLO LAS PARTES QUE SEAN DIFERENTES AL INDEX EN LAS SIGUIENTES HOJAS-->
+
+<!--Cabecera de la página html-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--Titulo de la web-->
+<title>Curriculum Vitae</title>
+<link rel="stylesheet" href="1.css">
+<meta charset="utf-8" />
+</head>
+<!--Comienzo del cuerpo de la página, el body tiene una clase, ya que luego en el CSS abrá que especificarlo, porque no todos los bodys van a tener todo en común-->
+<body class="primera_hoja">
+    <!--header con su clase por el mismo motivo mencionado antes. Es el encabezado principal-->
+    <header class="titulo">
+        <!--Título en formato h3 para que este mas destacado. Nombre y descripción-->
+        <h3>ADRIÁN SANDE DOMÍNGUEZ - Estudiante de DAM en formación</h3>
+    </header>
+    <!--Contenido principal-->
+    <main>
+        <!--Contenedor general con todo el contenido-->
+        <div class="todo">
+            <!--Apartado de navegación que será común a todas las hojas html. Desde aquí se controlará su posición en la hoja (izquierda/lateral izquierda)-->
+            <nav class="navegacion">
+                <!--Estructurado con una lista desordenada-->
+                <ul>
+                    <!--Contenedor que coge el primer apartado de navegación-->
+                    <!--Inicio-->
+                    <div class="primer_elemento">
+                        <!--Le quitamos el formato a la lista-->
+                        <li style="list-style-type: none;">
+                            <!--Esta es la dirección a la que nos llevará cuando cliquemos en el nombre especificado-->
+                            <a href="Index.html"> <!--Texto en negrita--> <b>Inicio</b></a>
+                            <!--div Contenedor coge el texto que abrá debajo del título del primer apartado de navegación. Estará la descripción del apartado-->
+                            <div class="introduccion">
+                                <!--Lo haremos mas pequeño para que haga contraste con la letra mas grande del título y así se destaque mas-->
+                                <small>"Quién soy, como trabajo, de donde vengo..."</small>
+                            </div>
+                        </li>
+                    <!--Tendremos la misma estructura en los siguientes apartado de navegación-->
+                    </div>
+                    <!--Formación-->
+                    <div class="segundo_elemento">
+                        <li style="list-style-type: none;">
+                            <a href="Formacion.html"><b>Formación</b></a>
+                            <div class="introduccion">
+                                <small>"Estudios, lugar, titulación..."</small>
+                            </div>
+                        </li>
+                    </div>
+                    <!--Experiencia-->
+                    <div class="tercer_elemento">
+                        <li style="list-style-type: none;">
+                            <a href="Experiencia.html"><b>Experiencia</b></a>
+                            <div class="introduccion">
+                                <small>"Prácticas, trabajos realizados, lugar..."</small>
+                            </div>
+                        </li>
+                    </div>
+                    <!--Competencias-->
+                    <div class="cuarto_elemento">
+                        <li style="list-style-type: none;">
+                            <a href="Competencias.html"><b>Competencias</b></a>
+                            <div class="introduccion">
+                                <small>"Capacidades por los estudios, conocimientos propios..."</small>
+                            </li>
+                        </div>
+                    <!--Contacto-->
+                    <div class="quinto_elemento">
+                        <li style="list-style-type: none;">
+                            <a href="Contacto.html"><b>Contacto</b></a>
+                            <div class="introduccion">
+                                <small>"Número, email, redes soaciales..."</small>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <!--Contenedor que que contiene un texto de introducción y lo que hay que hacer para acceder a las secciones o volver. Este controlará la posición en la hoja (centro) de este contenido y su estilo-->
+            <div class="informacion_de_seccion">
+                <!--Contenedor que recoge dicha información-->
+                <div class="explicacion">
+                    <!--Parrafo con el contenido mencionado-->
+                    <p>Me llamó Adrián, tengo 18 años, y resido actualmente en Cangas do Morrazo. Mi mayor pasión es la informática y todo lo relacionado con software y diseño web. A la derecha tienes mis redes sociales, y en las cajas la informción indicada.
+                        <!--Texto subrayado y con salto de linea para que no este pegado. -->
+                        <br><br>
+                        <ins>Clica en el titulo para acceder a las secciones. <br><br> Clica de nuevo en el para volver al incio</ins>
+                    </p>
+                </div>
+            </div>
+            <!--Contenedor que recoge una imagen del creador de está página. Texto con titulación. Lista de redes sociales. Desde aquí se controlará la posición en la hoja  (lateral derecho/sección lateral) y el estilo de estos apartados-->
+            <div class="contenedor_derecho">
+                <!--Imagen de perfil con un texto breve de descripción de la misma-->
+                <img src="https://ih1.redbubble.net/image.5059831822.1588/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="imagen de presentación">
+                <!--Contenedor con la titulación-->
+                <div class="titulacion">TÉCNICO EN SISTEMAS MICROINFORMÁTICOS Y REDES</div>
+                <!--Salto de línea-->
+                <br>
+                <!--Contenedor con las redes sociales-->
+                <div class="redes">
+                    <!--Lista desordenada para la maquetación de este apartado-->
+                    <ul>
+                        <!--Primer elemento. Le quitamos el estilo a la lista-->
+                        <!--Instagram-->
+                        <li style="list-style-type: none;">
+                            <!--imagen de la red social y el texto descriptivo-->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png" alt="instagram">
+                            <!--Nombre en la red social en negrita. Tendrá un margen izquierdo y uno superior. Color negro y letra grande-->
+                            <b style="margin-left: 5%; margin-top: 3%;color: rgb(0, 0, 0); font-size: 120%;">@Eidrien_15</b>
+                        <!--El resto de elementos tendrá la misma estructura-->
+                        </li>
+                        <!--Facebook-->
+                        <li style="list-style-type: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png" alt="facebook">
+                            <b style="margin-left: 5%; margin-top: 3%;color: rgb(0, 0, 0); font-size: 120%;">@EidrienFace_15</b>
+                        </li>
+                        <!--X-->
+                        <li style="list-style-type: none;">
+                            <img src="https://guiaimpresion.com/wp-content/uploads/2023/09/1.jpg" alt="X">
+                            <b style="margin-left: 5%; margin-top: 3%;color: rgb(0, 0, 0); font-size: 120%;">@EidrienX_15</b>
+                        </li>
+                        <!--Linkedin-->
+                        <li style="list-style-type: none;">
+                            <img src="https://static.vecteezy.com/system/resources/previews/023/986/970/non_2x/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="linkedin">
+                            <b style="margin-left: 5%; margin-top: 3%;color: rgb(0, 0, 0); font-size: 120%;">@EidrienJob_15</b>
+                        </li>
+                        <!--GitHub-->
+                        <li style="list-style-type: none;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                            <b style="margin-left: 5%; margin-top: 3%;color: rgb(0, 0, 0); font-size: 120%;" alt="github">@EidrienGit_15</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!--footer con un parrafo con los derechos de autor. Pie de página-->
+        <footer>
+            <!--El texto estará centrado, tendrá color de fondo negro, color de letra blanco y un padding.-->
+            <p style="text-align:center; background-color:#000000; color:white; padding: 10px;">© 2026 Adrián Sande Domínguez - Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>

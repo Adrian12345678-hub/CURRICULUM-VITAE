@@ -1,0 +1,182 @@
+/*NO VOY A COMENTAR COSAS REPITIDAS (SI EXPLICO UNA VEZ LO QUE ES UN PADDING NO LO VOY A VOLVER A HACER)*/
+
+/* Estilo para el body de todas las hojas */
+body {
+   font-family: Arial, Helvetica, sans-serif; /*Fuente utilizada*/
+   background-color: #FFF9E6; /*Color de fondo*/
+}
+/*Lista de la navegación*/
+.navegacion ul{
+   display: flex; /*Utilizamos flexbox para maquetar la navegación*/
+   flex-direction: column; /*Elementos ordenados en columna*/
+   gap: 2.2rem; /*Separación entre elementos*/
+   word-break: normal; /*No se pueden romper las palabras*/
+   overflow-wrap: anywhere; /*Se rompen si no queda otra opción*/
+   /*Que no haya margen ni arriba ni abajo*/
+   margin-bottom: 0; 
+   margin-top: 0; 
+   align-items: flex-start; /*Alinea los elementos a la izquierda*/
+}
+
+/*Elementos de la lista de la navegación*/
+.primer_elemento, .segundo_elemento, .tercer_elemento, .cuarto_elemento, .quinto_elemento {
+   background-color: #66D7D1;
+   width: 110%; /*Ancho de cada elemento*/
+   padding: 6%; /*Espacio interior que tendrán*/
+   display: flex;
+   border: 2px solid black; /*Tipo de borde y color*/
+   font-size: 180%; /*Tamaño de la letra*/
+}
+/*Enlaces*/
+a {
+   text-decoration: none; /*Sin estilo*/
+   color: #000000; /*Color de la letra*/
+}
+/*Contenedor principal con todo el contenido*/
+.todo {
+   display: grid; /*Organiza todo en cuadriculas*/
+   grid-template-columns: repeat(3,1fr); /*Se divide toda la pantalla en 3 cuadrículas (columnas) iguales*/
+}
+/*Texto de introducción a cada sección*/
+.introduccion {
+   margin-top: 2%;
+}
+/*Elementos que abrán en el lado derecho de la pantalla*/
+.contenedor_derecho {
+   grid-column: 3; /*Estará en la tercera columna*/
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end; /*Alineación en la derecha*/
+   word-break: break-all; /*Corta las palabras*/
+   margin-right: 6%;
+}
+/*Titulación principal*/
+.titulacion {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   grid-column: 3;
+   word-break: normal;
+   overflow-wrap: anywhere;
+   font-size: 130%;
+   width: 60%;
+}
+/*Redes sociales*/
+.redes {
+   background-color: #66D7D1;
+   word-break: break-all;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   grid-column: 3;
+   width: 60%;
+   height: 65%; /*Altura que tendrá el contenedor*/
+}
+/*Imagen de presentación*/
+.contenedor_derecho img {
+   width: 60%;
+   height: 30%;
+}
+/*Iconos de redes sociales*/
+.redes img {
+   width: 15%;
+   height: 70%;
+   display: flex;
+   word-break: break-all;
+   flex-direction: column;
+   align-items: flex-end;
+   grid-column: 3;
+
+}
+/*Lista de redes sociales*/
+.redes ul {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem; /*Espacio entre los elementos de la lista*/
+   grid-column: 3;
+   word-break: break-all;
+   width: 90%;
+   height: 90%;
+   justify-content: space-between; /*Crea espacio entre los elementos*/
+}
+/*Elementos de la lista de redes*/
+.redes li {
+   margin-left: 3%;
+   display: flex;
+}
+/*Interacción de los elementos al pasar el cursor por ellos*/
+.primer_elemento:hover, .segundo_elemento:hover, .tercer_elemento:hover, .cuarto_elemento:hover, .quinto_elemento:hover {
+   background-color: #FFF87F; /*Cambián a color al pasarles el cursor*/
+}
+/*Contenedor donde estará la información de cada elemento*/
+.informacion_de_seccion {
+   display: flex;
+   word-break: break-all;
+   flex-direction: column;
+   grid-column: 2;
+   font-size: 250%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+/*Información de cada elemento*/
+.explicacion {
+   display: grid;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   width: 90%;
+   margin-left: 60%;
+   word-break: normal;
+   line-height: 2.5; /*Espacio entre lineas*/
+}
+/*Estilo que tendrá en dicha hoja*/
+.primera_hoja .explicacion, .segunda_hoja .explicacion, .tercera_hoja .explicacion, .cuarta_hoja  .explicacion, .quinta_hoja .explicacion {
+    line-height: 1.5;
+    word-break: normal;
+    font-size: 50%;
+    border: 1px solid black;
+    padding: 5%;
+    text-align: left;
+}
+/*Color que tendrá ese elemento cuando estemeos en dicha hoja*/
+.primera_hoja .primer_elemento, .segunda_hoja .segundo_elemento, .tercera_hoja .tercer_elemento, .cuarta_hoja .cuarto_elemento, .quinta_hoja .quinto_elemento {
+   background-color: #FFF87F;
+}
+/*Título del CV*/
+.titulo {
+   margin-left: 4%;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+/*Organización de la explicación de la sección en dicha hoja*/
+.tercera_hoja .explicacion {
+   display: grid;
+   grid-template-columns: 1fr 1fr; /*Como se va adividir el texto en dicha hoja*/
+   gap: 1rem;
+   word-break: normal;
+   overflow-wrap: anywhere;
+}
+/*Altura que tendrán las sección en dicha hoja*/
+.tercera_hoja .practicas, .tercera_hoja .CV {
+   height: 100%;
+}
+/*No permitir que se rompa el texto salvo que sea indispensable en la explicación en esa hojas*/
+.segunda_hoja .explicacion, .cuarta_hoja .explicacion, .quinta_hoja .explicacion {
+   word-break: normal;
+   overflow-wrap: anywhere;
+}
+/*Como se va a organizar la explicación en la lista de dicha hoja*/
+.cuarta_hoja .explicacion ul{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 30px;
+}
+/*Tamaño de las barras de progreso*/
+progress {
+   width: 50%;
+}
+/*Interlineado que tendrá cada elemento de la lista de la explicación en dicha hoja*/
+.cuarta_hoja .explicacion li {
+   line-height: 1.1;
+}
